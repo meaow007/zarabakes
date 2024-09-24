@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara Bakes</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fffafc;
+            color: #4b2c42;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-weight: bold;
+            color: #7e4a8a;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav {
+            background-color: #f3e8ff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #9b77a6;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: #fcefe3;
+            padding: 100px 20px;
+            text-align: center;
+            background: linear-gradient(120deg, #f9e5f7, #fff4b7);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px 0;
+        }
+
+        .product {
+            background-color: #fffafc;
+            padding: 20px;
+            border: 1px solid #e0c7ff;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .checkout {
+            padding: 20px;
+            background-color: #ffebf5;
+            text-align: center;
+        }
+
+        .checkout input[type="text"], 
+        .checkout input[type="number"] {
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            border: 1px solid #dab3ff;
+            border-radius: 4px;
+        }
+
+        .checkout button {
+            padding: 10px 20px;
+            background-color: #b084c2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #f3e8ff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cakes.html">Cakes</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="milkshakes.html">Milkshakes</a>
+        <a href="waffles.html">Waffles</a>
+        <a href="pancakes.html">Pancakes</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Zara Bakes</h1>
+        <p>Delicious brownies, cakes, cookies, and more!</p>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products" class="container">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://makeitdough.com/wp-content/uploads/2019/09/Brownies-12-scaled.jpg" alt="Brownies">
+                <h3>Brownies</h3>
+                <p>Rich, gooey brownies made from the finest ingredients.</p>
+            </div>
+            <div class="product">
+                <img src="https://mrbrownbakery.com/image/images/GJ7uCwGiteTF24HTWBclkziVTdhpQeZWH23MvQfq.jpeg?p=" usemap="#image-map" alt="Cakes">
+                <h3>Cakes</h3>
+                <p>Delightful cakes in various flavors, perfect for any occasion.</p>
+                <!-- Image Map for Cakes -->
+                <map name="image-map">
+                    <area target="_blank" alt="cakes" title="cakes" href="file:///C:/Users/zainabmasoom/OneDrive/Camera%20Roll/OneDrive/Desktop/cakes.html" coords="7,7,422,424" shape="rect">
+                </map>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrrUu75vr3kfPDXzrPdq6CeT1PwjjJwRQoWA&s" alt="Cookies">
+                <h3>Cookies</h3>
+                <p>Crispy and chewy cookies that melt in your mouth.</p>
+            </div>
+            <div class="product">
+                <img src="https://www.tastesoflizzyt.com/wp-content/uploads/2023/04/how-to-make-a-milkshake-with-ice-cream-15.jpg" alt="Milkshakes">
+                <h3>Milkshakes</h3>
+                <p>Refreshing milkshakes in a variety of flavors.</p>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3ISDrSE3DllhGSt5o4ZFy1_cGiawX0_FfAQ&s" alt="Waffles">
+                <h3>Waffles</h3>
+                <p>Golden, crispy waffles served with syrup and toppings.</p>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4FUOY5zC1bolvxvKdVAOjuhoR0pFkkPYbwQ&s" alt="Pancakes">
+                <h3>Pancakes</h3>
+                <p>Fluffy pancakes served with butter and maple syrup.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section id="checkout" class="checkout">
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+            <input type="text" id="name" placeholder="Enter your name" required><br>
+            <input type="number" id="quantity" placeholder="Enter quantity" required><br>
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Zara Bakes. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('checkout-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const quantity = document.getElementById('quantity').value;
+            if (name && quantity) {
+                alert('Thank you, ' + name + '! Your order of ' + quantity + ' items has been placed.');
+            } else {
+                alert('Please fill out all fields.');
+            }
+        });
+    </script>
+
+</body>
+</html>
